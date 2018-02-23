@@ -3,10 +3,9 @@
 require "bundler/setup"
 Bundler.setup(:default,:production,:development)
 
+require "awesome_print"
 require "dotenv"
 Dotenv.load
-
-require "debugging/all"
 
 loaddirs = [
   ['.', 'lib'],
